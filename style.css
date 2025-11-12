@@ -1,0 +1,11 @@
+body {
+  max-width: 800px;
+  text-align: center;
+  margin: 50px auto;
+  background-color: rgb(211, 209, 209);
+}
+#btn {
+  background-color: blue;
+  padding: 5px 10px;
+  color: aquamarine;
+}
