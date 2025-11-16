@@ -5,17 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="container">
       <h1 class="title">Random quotes</h1>
       <p id="quote">Тут будет твоя цитата</p>
-      <button id="btn">Generate quotes</button>
-      <form action="">
-        <input id="new_text" type="text" />
-        <button id="add_btn">Add quotes</button>
-      </form>
+      <p id="quote-author">Жми на кнопку</p>
+      <button id="generate-btn" class="btn">Generate quotes</button>
+      <i
+        id="toggle-favorite-btn"
+        class="far fa-star star-icon"
+        aria-hidden="true"
+      ></i>
     </div>
-    <script src="script.js"></script>
+    <div id="favorites-container" class="favorites-container">
+      <!--Добавляется динамически -->
+    </div>
+    <script src="index.js" type="module"></script>
   </body>
 </html>

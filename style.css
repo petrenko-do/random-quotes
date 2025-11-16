@@ -4,8 +4,45 @@ body {
   margin: 50px auto;
   background-color: rgb(211, 209, 209);
 }
-#btn {
+.btn {
   background-color: blue;
-  padding: 5px 10px;
-  color: aquamarine;
+  border-radius: 10px;
+  padding: 10px 10px;
+  color: #fff;
+}
+.btn:hover {
+  background-color: #4e57f9;
+  cursor: pointer;
+}
+#toggle-favorite-btn {
+  display: none;
+}
+#quote {
+  font-style: italic;
+}
+#quote::after,
+#quote::before {
+  content: '"';
+}
+.favorites-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.favorite-card {
+  background-color: #f9f9f9;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 8px;
+  width: 25%;
+}
+.author {
+  font-style: italic;
+}
+.star-icon {
+  color: yellow;
+  font-size: 35px;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-left: 20px;
 }
